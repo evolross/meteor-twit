@@ -10,7 +10,7 @@ Create new Twit
 ===============
 
 
-Place this on the server side
+If authenticating with user-context, place this on the server side
 
     Twit = new TwitMaker({
         consumer_key:         '...'
@@ -19,6 +19,13 @@ Place this on the server side
       , access_token_secret:  '...'
     });
 
+If authenticating with application-only context, place this on the server side
+
+    Twit = new TwitMaker({
+        consumer_key:         '...'
+      , consumer_secret:      '...'
+      , app_only_auth:        true
+    });
 
 Usage
 =====
